@@ -1,5 +1,6 @@
-#import matplotlib.pyplot module
+#import module
 import matplotlib.pyplot as plt
+import datetime as dt
 
 #create a list of rainfall for Brussels and London
 rainfall_brussels = [150, 164, 137, 149, 139, 205, 144, 170, 140, 170, 169, 180]
@@ -15,8 +16,17 @@ y_brussels = [length - 100 for length in rainfall_brussels]
 y_london = [length - 100 for length in rainfall_london]
 
 #plot the bar chart with value x, y, width, and bottom for each bar
-brussels = plt.bar(x_brussels, y_brussels, 0.8, 100)
-london = plt.bar(x_london, y_london, 0.8, 100)
+brussels = plt.bar(x_brussels, y_brussels, 0.8, 100, label = "Brussels")
+london = plt.bar(x_london, y_london, 0.8, 100, label = "London")
+
+#adding information to the bar chart (ticks, labels, title, and legend)
+plt.xticks(x_brussels, ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct","Nov", "Dec"])
+plt.title("Rainfall comparison between Brussels and London")
+plt.xlabel("2022")
+plt.ylabel("Rainfall (mm)")
+
+#adding legend to the bar chart
+plt.legend()
 
 #display the bar chart
 plt.show()
