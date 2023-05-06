@@ -1,6 +1,5 @@
 #import module
 import matplotlib.pyplot as plt
-import datetime as dt
 
 #create a list of rainfall for Brussels and London
 rainfall_brussels = [150, 164, 137, 149, 139, 205, 144, 170, 140, 170, 169, 180]
