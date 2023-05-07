@@ -8,7 +8,7 @@ rainfall_london = [188, 153, 229, 173, 192, 273, 261, 134, 157, 169, 192, 157]
 #assign the length of the list brussels to the variable x
 #move each bar of london to the right by 1
 x_brussels = [position * 2 for position in range(len(rainfall_brussels))]
-x_london = [position + 1 for position in x_brussels]
+x_london = [position + 0.8 for position in x_brussels]
 
 #define the height of each bar and subtract 100, assuming there is no rainfall below 100
 y_brussels = [length - 100 for length in rainfall_brussels]
